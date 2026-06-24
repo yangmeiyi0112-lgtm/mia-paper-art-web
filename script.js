@@ -8,7 +8,7 @@ const backToTop = document.querySelector("[data-back-to-top]");
 
 const updateHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 24);
-  backToTop.classList.toggle("is-visible", window.scrollY > 420);
+  backToTop.classList.add("is-visible");
 };
 
 updateHeader();
