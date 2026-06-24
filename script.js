@@ -4,9 +4,11 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const form = document.querySelector("[data-form]");
 const statusText = document.querySelector("[data-status]");
 const productInput = document.querySelector("[data-product-input]");
+const backToTop = document.querySelector("[data-back-to-top]");
 
 const updateHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 24);
+  backToTop.classList.toggle("is-visible", window.scrollY > 420);
 };
 
 updateHeader();
@@ -43,4 +45,8 @@ form.addEventListener("submit", (event) => {
     ? `${name}，已收到你的詢問示範。正式上線時可串接 Email、LINE 或購物車系統。`
     : "已收到你的詢問示範。正式上線時可串接 Email、LINE 或購物車系統。";
   form.reset();
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
