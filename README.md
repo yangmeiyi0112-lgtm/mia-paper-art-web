@@ -2,6 +2,8 @@
 
 這是「米亞紙意手作」的靜態形象與商品展示網站，可直接使用 GitHub Pages 部署。
 
+之後所有要上傳到 GitHub 的網站檔案都固定放在這個資料夾內：`mia-paper-art-github`。
+
 ## 檔案結構
 
 ```text
