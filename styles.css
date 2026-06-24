@@ -299,7 +299,8 @@ textarea {
 }
 
 .category-band span,
-.steps span {
+.steps span,
+.award-list span {
   color: var(--gold);
   font-family: "Noto Serif TC", serif;
   font-size: 1.6rem;
@@ -471,6 +472,29 @@ h3 {
   border: 1px solid var(--line);
 }
 
+.awards {
+  border-bottom: 1px solid var(--line);
+}
+
+.award-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.award-list article {
+  min-height: 13rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 34px rgba(54, 38, 19, 0.08);
+}
+
+.award-list p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .contact {
   display: grid;
   grid-template-columns: 0.88fr 1.12fr;
@@ -579,6 +603,7 @@ h3 {
   .contact,
   .category-band,
   .product-grid,
+  .award-list,
   .steps {
     grid-template-columns: 1fr;
   }
